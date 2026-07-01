@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+<h1>Language Translation Tool</h1>
+
+<div class="translation-wrapper">
+<div class="text-box">
+<select id="source-lang">
+<option value="en" selected>English</option>
+<option value="ar">Arabic (العربية)</option>
+<option value="bn">Bengali (বাংলা)</option>
+<option value="zh">Chinese (中文)</option>
+<option value="cs">Czech (Čeština)</option>
+<option value="da">Danish (Dansk)</option>
+<option value="nl">Dutch (Nederlands)</option>
+<option value="fi">Finnish (Suomi)</option>
+<option value="fr">French (Français)</option>
+<option value="de">German (Deutsch)</option>
+<option value="el">Greek (Ελληνικά)</option>
+<option value="he">Hebrew (עברית)</option>
+<option value="hi">Hindi (हिन्दी)</option>
+<option value="hu">Hungarian (Magyar)</option>
+<option value="id">Indonesian (Bahasa Indonesia)</option>
+<option value="it">Italian (Italiano)</option>
+<option value="ja">Japanese (日本語)</option>
+<option value="ko">Korean (한국어)</option>
+<option value="ms">Malay (Bahasa Melayu)</option>
+<option value="no">Norwegian (Norsk)</option>
+<option value="fa">Persian (فارسی)</option>
+<option value="pl">Polish (Polski)</option>
+<option value="pt">Portuguese (Português)</option>
+<option value="ro">Romanian (Română)</option>
+<option value="ru">Russian (Русский)</option>
+<option value="es">Spanish (Español)</option>
+<option value="sv">Swedish (Svenska)</option>
+<option value="th">Thai (ไทย)</option>
+<option value="tr">Turkish (Türkçe)</option>
+<option value="vi">Vietnamese (Tiếng Việt)</option>
+</select>
+<textarea id="source-text" maxlength="1000" placeholder="Enter text to translate..."></textarea>
+<div class="controls">
+<button id="speak-source" title="Listen to text"><i class="fas fa-volume-up"></i></button>
+<span class="char-count" id="char-count">0 / 1000</span>
+</div>
+</div>
+
+<button id="swap-langs" class="swap-btn" title="Swap Languages"><i class="fas fa-exchange-alt"></i></button>
+
+<div class="text-box">
+<select id="target-lang">
+<option value="en">English</option>
+<option value="ar">Arabic (العربية)</option>
+<option value="bn">Bengali (বাংলা)</option>
+<option value="zh">Chinese (中文)</option>
+<option value="cs">Czech (Čeština)</option>
+<option value="da">Danish (Dansk)</option>
+<option value="nl">Dutch (Nederlands)</option>
+<option value="fi">Finnish (Suomi)</option>
+<option value="fr">French (Français)</option>
+<option value="de">German (Deutsch)</option>
+<option value="el">Greek (Ελληνικά)</option>
+<option value="he">Hebrew (עברית)</option>
+<option value="hi">Hindi (हिन्दी)</option>
+<option value="hu">Hungarian (Magyar)</option>
+<option value="id">Indonesian (Bahasa Indonesia)</option>
+<option value="it">Italian (Italiano)</option>
+<option value="ja">Japanese (日本語)</option>
+<option value="ko">Korean (한국어)</option>
+<option value="ms">Malay (Bahasa Melayu)</option>
+<option value="no">Norwegian (Norsk)</option>
+<option value="fa">Persian (فارسی)</option>
+<option value="pl">Polish (Polski)</option>
+<option value="pt">Portuguese (Português)</option>
+<option value="ro">Romanian (Română)</option>
+<option value="ru">Russian (Русский)</option>
+<option value="es" selected>Spanish (Español)</option>
+<option value="sv">Swedish (Svenska)</option>
+<option value="th">Thai (ไทย)</option>
+<option value="tr">Turkish (Türkçe)</option>
+<option value="vi">Vietnamese (Tiếng Việt)</option>
+</select>
+<textarea id="target-text" readonly placeholder="Translation will appear here..."></textarea>
+<div class="controls">
+<button id="speak-target" title="Listen to translation"><i class="fas fa-volume-up"></i></button>
+<button id="copy-target" title="Copy translation"><i class="fas fa-copy"></i></button>
+</div>
+</div>
+</div>
+
+<button id="translate-btn" class="main-btn">Translate Text</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
